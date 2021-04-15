@@ -1,7 +1,7 @@
-FROM ubuntu
+FROM ubuntu:hirsute
 WORKDIR /work
 RUN apt update && \
-    apt install -y curl zip unzip gnupg curl jq less wget && \
+    apt install -y curl zip unzip gnupg curl jq less wget groff && \
     echo "-----BEGIN PGP PUBLIC KEY BLOCK----- \n\
 \n\
 mQINBF2Cr7UBEADJZHcgusOJl7ENSyumXh85z0TRV0xJorM2B/JL0kHOyigQluUG\n\
